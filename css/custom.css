@@ -1,0 +1,19 @@
+html, body, *{
+    font-family: 'Merriweather Sans', sans-serif !important;
+}
+.reveal section img {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none;
+}
+.reveal h3 {
+     font-size: 1em !important;
+ }
+
+.reveal p {
+    font-size: .7em !important;
+}
+
+.vue {
+ color: #42B782;
+}

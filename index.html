@@ -4,14 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Entonces, ¿Qué es Vue?</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +27,135 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- presentation -->
+				<section data-transition="zoom">
+					<img src="./img/logo.png" />
+					<h3>Entonces, ¿Qué es Vue?</h3>
+				</section>
+				<!-- Slide 1 - Myself -->
+				<section >
+					<div class="black-bg">
+						<table>
+							<tr>
+								<td>
+									<img src="img/myself.jpg" alt="Josué Arambide" class="me" style="width: 300px;">
+								</td>
+								<td style="vertical-align: top">
+									<h3>Josué Arambide</h3>
+									<p>- Desarrollador frontend en TCS</p>
+									<p>- Consultor de Tecnologia en Teczelt brazil</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div>
+										<h3>Social</h3>
+										<p>- github.com/josueaqp92/</p>
+										<p>- josue@josuearambide.com</p>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section>
+					<h2>¿Qué es <span class="vue">Vue</span>?</h2>
+				</section>
+				<section>
+					<ul>
+						<li>Un framework para el desarrollo de interfaces</li>
+						<li>Fácil integración con otras librerias</li>
+						<li>Actual versión es la 2</li>
+						<li>Fué creado por Evan You, ex trabajador de Google</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Por qué <span class="vue">Vue</span>?</h2>
+				</section>
+				<section>
+					<ul>
+						<li>Simple y fácil</li>
+						<li>Peso mínimo (hasta 34kb)</li>
+						<li>Reactividad</li>
+						<li>Basado en componentes</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Quiénes usan <span class="vue">Vue</span>?</h2>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>
+								<img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" style="width: 300px">
+							</td>
+							<td>
+								<img src="img/alibaba.png" style="width: 300px">
+							</td>
+							<td>
+								<img src="img/xiaomi.png" style="width: 200px">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/behance.jpg" style="width: 300px">
+							</td>
+							<td>
+								<img src="img/9gag.jpg" style="width: 240px">
+							</td>
+							<td>
+								<img src="img/wizzair.png" style="width: 200px">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Conceptos</h2>
+				</section>
+				<section>
+					<h4>Componentes</h4>
+					<ul>
+						<li><b>Single File Component</b></li>
+						<li>Props</li>
+						<li>Listeners</li>
+						<li>Slots</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Reusabilidad y Composición</h4>
+					<ul>
+						<li>Mixins</li>
+						<li>Directives</li>
+						<li>Plugins</li>
+						<li>Filters</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Escalabilidad</h4>
+					<ul>
+						<li>Routing (https://router.vuejs.org/)</li>
+						<li>State Management (https://vuex.vuejs.org/)</li>
+						<li>Server-Side Rendering (https://nuxtjs.org/)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Vue <span class="vue">Pros</span></h2>
+				</section>
+				<section>
+					<h2>Vue <span class="vue">Contras</span></h2>
+				</section>
+				<section>
+					<h2><span class="vue">Vue</span> vs</h2>
+				</section>
+				<section>
+					<h2><span class="vue">Vue</span> vs React vs Angular</h2>
+				</section>
+				<section>
+					<h2><span class="vue">Vue</span> v3 ?</h2>
+				</section>
+				<section>
+					<h2><span class="vue">Gracias!</span></h2>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +166,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				hash: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -45,5 +175,6 @@
 				]
 			});
 		</script>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
 	</body>
 </html>
