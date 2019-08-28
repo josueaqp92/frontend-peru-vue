@@ -264,9 +264,61 @@
 				<section>
 					<h2>Consejos</h2>
 				</section>
+                <section>
+                    <ul>
+                        <li><a href="https://cli.vuejs.org/">Vue CLI 3</a></li>
+                        <li><a href="https://vuetifyjs.com">Vuetify</a></li>
+                        <li><a href="https://vue.ant.design/docs/vue/introduce/">Vue Ant Design</a></li>
+                        <li><a href="https://baianat.github.io/vee-validate/">Vee Validate</a></li>
+                        <li><a href="https://github.com/vuejs/vue-devtools">Vue Dev Tools</a></li>
+                        <li><a href="https://github.com/vue-styleguidist/vue-styleguidist">Vue styleguidist</a></li>
+                    </ul>
+                </section>
 				<section>
 					<h2><span class="vue">Vue</span> v3 ?</h2>
 				</section>
+                <section>
+                    <pre>
+                        <code>
+<template>
+  <div>
+    <span>count is {{ count }}</span>
+    <span>plusOne is {{ plusOne }}</span>
+    <button @click="increment">count++</button>
+  </div>
+</template>
+
+<script>
+import { value, computed, watch, onMounted } from 'vue'
+
+export default {
+  setup() {
+    // reactive state
+    const count = value(0)
+    // computed state
+    const plusOne = computed(() => count.value + 1)
+    // method
+    const increment = () => { count.value++ }
+    // watch
+    watch(() => count.value * 2, val => {
+      console.log(`count * 2 is ${val}`)
+    })
+    // lifecycle
+    onMounted(() => {
+      console.log(`mounted`)
+    })
+    // expose bindings on render context
+    return {
+      count,
+      plusOne,
+      increment
+    }
+  }
+}
+</script>
+                        </code>
+                    </pre>
+                </section>
 				<section>
 					<h2><span class="vue">Gracias!</span></h2>
 				</section>
