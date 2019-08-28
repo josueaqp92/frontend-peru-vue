@@ -113,13 +113,107 @@
 					<h2>Conceptos</h2>
 				</section>
 				<section>
-					<h4>Componentes</h4>
 					<ul>
-						<li><b>Single File Component</b></li>
 						<li>Props</li>
-						<li>Listeners</li>
+					</ul>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+							<blog-post title="My journey with Vue"></blog-post>
+
+							<blog-post v-bind:title="post.title"></blog-post>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<ul>
+						<li>Eventos</li>
+					</ul>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+							this.$emit('myEvent')
+						</code>
+					</pre>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+							<my-component v-on:my-event="doSomething"></my-component>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<ul>
 						<li>Slots</li>
 					</ul>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+	<navigation-link url="/profile">
+	  Your Profile
+	</navigation-link>
+						</code>
+					</pre>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+	<a
+		v-bind:href="url"
+		class="nav-link"
+	>
+	  <slot></slot>
+	</a>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h4>Single File Component</h4>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+	<template>
+	  <p>{{ greeting }} World!</p>
+	</template>
+
+	<script>
+	module.exports = {
+		data: function () {
+			return {
+				greeting: 'Hello'
+			}
+		}
+	}
+	</script>
+
+	<style scoped>
+	p {
+		font-size: 2em;
+		text-align: center;
+	}
+	</style>
+           </code></pre>
+				</section>
+				<section>
+					<ul>
+						<li>Lifecycle Hooks</li>
+					</ul>
+					<pre>
+						<code class="xml hljs" data-trim contenteditable>
+	<script>
+		export default {
+			beforeUpdate() {
+			},
+			updated() {
+			},
+			beforeCreate() {
+			},
+			created() {
+			},
+			beforeMount() {
+			},
+			mounted() {
+			},
+			beforeDestroy() {
+			},
+			destroyed() {
+			}
+		}
+	</script>
+           </code></pre>
 				</section>
 				<section>
 					<h4>Reusabilidad y Composición</h4>
@@ -136,19 +230,39 @@
 						<li>Routing (https://router.vuejs.org/)</li>
 						<li>State Management (https://vuex.vuejs.org/)</li>
 						<li>Server-Side Rendering (https://nuxtjs.org/)</li>
+						<li>Test (https://vue-test-utils.vuejs.org/)</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Vue <span class="vue">Pros</span></h2>
 				</section>
 				<section>
+					<ul>
+						<li>No necesitas saber algo en específico</li>
+						<li>Tecnología tradicional</li>
+						<li>Fácil integración</li>
+						<li>Templates</li>
+						<li>Es más entendible</li>
+						<li>Basado en componentes</li>
+						<li>Proyectos con alta rotación</li>
+						<li>Sponsors</li>
+						<li>No peleas con Webpack (Vue CLi)</li>
+					</ul>
+				</section>
+				<section>
 					<h2>Vue <span class="vue">Contras</span></h2>
 				</section>
 				<section>
-					<h2><span class="vue">Vue</span> vs</h2>
+					<ul>
+						<li>Es menos popular para el trabajo</li>
+						<li>Menos soporte de la comunidad</li>
+					</ul>
 				</section>
 				<section>
 					<h2><span class="vue">Vue</span> vs React vs Angular</h2>
+				</section>
+				<section>
+					<h2>Consejos</h2>
 				</section>
 				<section>
 					<h2><span class="vue">Vue</span> v3 ?</h2>
